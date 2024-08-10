@@ -1,0 +1,229 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color:#8D6E63;
+  margin: 0px;
+  padding: 0;
+  color: #4B3F2F;
+}
+
+ h2, h3 {
+  color: #ffffff;
+  margin-left: 10px;
+  background: #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.add-title, .add-body {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #8B6B61;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+.title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #8D6E63, #6D4C41);
+  padding: 5px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.title h1{
+  margin: 0px;
+  color: rgb(255, 255, 255);
+}
+
+header h1 {
+  margin-left: 5px;
+  font-size: 24px;
+}
+
+
+.note-input {
+  background: linear-gradient(135deg, #EFE4DA, #C7B299);
+  border-radius: 8px;
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.page-title h1{
+  display: flex;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.note-input:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+ .add-body {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #8B6B61;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.add-title:focus, .add-body:focus {
+  border-color: #4B3F2F;
+  outline: none;
+}
+
+.add-body {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.done {
+  display: inline-flex;
+  align-items: center;
+  background: linear-gradient(135deg, #6D4C41, #8D6E63); 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.done:hover {
+  background: linear-gradient(135deg, #8D6E63, #6D4C41); 
+  transform: scale(1.1);
+}
+
+/* Notes List Styles */
+.notes-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.note-item {
+  background: linear-gradient(135deg, #D7CCC8, #A1887F); /* Warna kayu alami */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.note-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Note Styles */
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-title {
+  margin: 0;
+  font-size: 20px;
+  color: #4E342E;
+  background: linear-gradient(45deg, #4E342E, #846e67); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.note-title a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.note-title a:hover {
+  color: #8B6B61;
+}
+
+/* Note Detail Styles */
+.note-detail {
+  background: linear-gradient(135deg, #EFE4DA, #C7B299); 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.note-date {
+  color: #8B6B61;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.note-body {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Button Styles */
+.delete-note {
+  background: linear-gradient(135deg, #6D4C41, #4E342E);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.delete-note:hover {
+  background: linear-gradient(135deg, #4E342E, #6D4C41);
+}
+
+.mdDone {
+  font-size: 24px;
+}
+
+.add {
+  font-size: 48px;
+  background: linear-gradient(135deg, #4E342E, #7B5E57); 
+  color: white;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.add:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #7B5E57, #4E342E);
+}
+
+/* Search Bar Styles */
+.searchNote {
+  width: 20%;
+  margin-left: 10px;
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid #8B6B61;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.searchNote:focus {
+  border-color: #4B3F2F;
+  outline: none;
+}
+
+/* Empty Notes Message */
+.empty {
+  text-align: center;
+  color: #8B6B61;
+  font-size: 18px;
+  margin-top: 20px;
+}
